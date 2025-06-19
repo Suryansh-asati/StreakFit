@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Brand Colors */
+    --primary-color: #27ae60;      /* Fresh Green for buttons, highlights */
+    --secondary-color: #f39c12;    /* Vibrant Orange for accents, calls to action */
+
+    /* Backgrounds & Layout */
+    --background-light: #f4f6f7;   /* Soft light gray for page backgrounds */
+    --card-bg: #ffffff;            /* Default card or section background */
+
+    /* Text Colors */
+    --text-dark: #2c3e50;          /* Slate gray for main text */
+    --text-light: #7f8c8d;         /* Lighter gray for secondary text */
+
+    /* Status Colors */
+    --success-color: #2ecc71;      /* For streaks, badges, positive feedback */
+    --error-color: #e74c3c;        /* For missed streaks or errors */
+
+    /* Shadow / Border */
+    --shadow-color: rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    --border-radius: 12px;
+
+    --font-family: "Monospace", monospace;
+    --font-size: 16px;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
