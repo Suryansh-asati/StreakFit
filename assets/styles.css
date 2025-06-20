@@ -9,16 +9,18 @@
 
 :root{
     /* Brand Colors */
-    --primary-color: #27ae60;      /* Fresh Green for buttons, highlights */
-    --secondary-color: #f39c12;    /* Vibrant Orange for accents, calls to action */
+    --primary-color: #2f6a87;      /* Fresh Green for buttons, highlights */
+    --secondary-color: #9a5131;    /* Vibrant Orange for accents, calls to action */
+    --accent-color: #ea6c36;       /* Bright Yellow for highlights, badges */
 
     /* Backgrounds & Layout */
-    --background-light: #f4f6f7;   /* Soft light gray for page backgrounds */
+    --background-light: #e7e7e7;   /* Soft light gray for page backgrounds */
     --card-bg: #ffffff;            /* Default card or section background */
+    --highlight: #f6ea98	;
 
     /* Text Colors */
-    --text-dark: #2c3e50;          /* Slate gray for main text */
-    --text-light: #7f8c8d;         /* Lighter gray for secondary text */
+    --text-dark: #3b3b3b;          /* Slate gray for main text */
+    --text-light: #f9f9f9;         /* Lighter gray for secondary text */
 
     /* Status Colors */
     --success-color: #2ecc71;      /* For streaks, badges, positive feedback */
@@ -48,14 +50,21 @@ body, html{
 }
 
 .navbar{
+    width: 70%;
+    height: 60px;
     display: flex;
     justify-content: space-between;
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 5px;
     align-items: center;
     padding: 20px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--card-bg);
     padding: 10px 20px;
     border: 2px solid var(--shadow-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 .container{
@@ -74,19 +83,73 @@ body, html{
 .navbar a{
     color: var(--card-bg);
     text-decoration: none;
-    margin-right: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
     transition: var(--transition-back);
 }
 
 .navbar a:hover{
-    color: var(--secondary-color);
-    text-decoration: underline;
+    color: var(--highlight);
     transition: var(--transition);
 }
 
+.navbar-links{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--card-bg);
+}
+
 .logo{
-    font-size: 24px;
-    font-weight: bold;
+    margin: 5px 0 0 0;
+    padding: 0;
     height: 40px;
-    width: 40px;
+    width: auto;
+    border-radius: var(--border-radius);
+}
+
+.logo img{
+    height: 100%;
+    width: auto;
+    border-radius: var(--border-radius);
+}
+
+.logo img:hover{
+    height: 100%;
+    width: auto;
+    border-radius: var(--border-radius);
+}
+
+.navbar-links li, .navbar-actions a{
+    list-style: none;
+    position: relative;
+}
+
+.nav-links{
+    padding: 0 15px;
+}
+
+.nav-links a::after, .navbar-actions a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--highlight);
+    transition: var(--transition-back);
+}
+
+.nav-links a:hover::after, .navbar-actions a:hover::after {
+    width: 100%;
+    transition: var(--transition);
+}
+
+.navbar ul li a {
+    color: var(--card-bg);
+}
+
+.navbar ul li a:hover {
+    color: var(--highlight);
 }
