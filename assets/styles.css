@@ -80,11 +80,11 @@ body, html{
     width: 100%;
 }
 
-.navbar a{
+.nav-links a{
     color: var(--card-bg);
     text-decoration: none;
     padding-right: 15px;
-    padding-left: 15px;
+    /* padding-left: 15px; */
     transition: var(--transition-back);
 }
 
@@ -93,7 +93,13 @@ body, html{
     transition: var(--transition);
 }
 
-.navbar-links{
+.links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -102,7 +108,6 @@ body, html{
 }
 
 .logo{
-    margin: 5px 0 0 0;
     padding: 0;
     height: 40px;
     width: auto;
@@ -121,16 +126,12 @@ body, html{
     border-radius: var(--border-radius);
 }
 
-.navbar-links li, .navbar-actions a{
+.nav-links li{
     list-style: none;
     position: relative;
 }
 
-.nav-links{
-    padding: 0 15px;
-}
-
-.nav-links a::after, .navbar-actions a::after {
+.nav-links a::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -141,7 +142,7 @@ body, html{
     transition: var(--transition-back);
 }
 
-.nav-links a:hover::after, .navbar-actions a:hover::after {
+.nav-links a:hover::after{
     width: 100%;
     transition: var(--transition);
 }
@@ -152,4 +153,70 @@ body, html{
 
 .navbar ul li a:hover {
     color: var(--highlight);
+}
+
+.nav-links.active {
+        right: 0;
+    }
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--highlight);
+    margin: 5px;
+    transition: var(--transition);
+}
+
+@media screen and (max-width: 768px) {
+    /* Navbar responsive*/
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 100%;
+        height: calc(100vh-100px );
+        background: var(--color-gradient-navlink);
+        opacity: 0.959;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        transition: var(--transition);
+        border-radius: 0px 0 0 10px;
+        box-shadow: 0 4px 15px rgba(15, 48, 56, 0.5);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+        transition: var(--transition);
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger.toggle div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+        transition: var(--transition);
+    }
+
+    .burger.toggle div:nth-child(2) {
+        opacity: 0;
+        transition: var(--transition);
+    }
+
+    .burger.toggle div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+        transition: var(--transition);
+    }
+
 }
