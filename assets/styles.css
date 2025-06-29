@@ -50,20 +50,20 @@ body, html{
 }
 
 .navbar{
-    width: 70%;
+    width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-self: center;
     margin: 0 auto;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     align-items: center;
     padding: 20px;
     background-color: var(--secondary-color);
     color: var(--card-bg);
     padding: 10px 20px;
     border: 2px solid var(--shadow-color);
-    border-radius: var(--border-radius);
+    /* border-radius: var(--border-radius); */
     box-shadow: 0 4px 8px var(--shadow-color);
 }
 
@@ -83,7 +83,7 @@ body, html{
 .nav-links a{
     color: var(--card-bg);
     text-decoration: none;
-    padding-right: 15px;
+    /* padding-right: 15px; */
     /* padding-left: 15px; */
     transition: var(--transition-back);
 }
@@ -102,7 +102,7 @@ body, html{
 .nav-links{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 2.5rem;
     text-decoration: none;
     color: var(--card-bg);
 }
@@ -172,14 +172,14 @@ body, html{
     transition: var(--transition);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     /* Navbar responsive*/
     .nav-links {
-        position: fixed;
-        right: -100%;
-        top: 100%;
+        position:absolute;
+        display: none;
+        top: 60px;
         height: calc(100vh-100px );
-        background: var(--color-gradient-navlink);
+        background: var(--secondary-color);
         opacity: 0.959;
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
@@ -192,7 +192,11 @@ body, html{
     }
 
     .nav-links.active {
-        right: 0;
+        display:inherit;
+    }
+
+    .nav-links a{
+        padding: 0;
     }
 
     .nav-links li {
