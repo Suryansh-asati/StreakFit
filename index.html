@@ -8,12 +8,12 @@
     <title>StreakFit</title>
 </head>
 <body>
-    <nav class="navbar ">
-            <div class="logo"><a href="index.html"><img src="/assets/sa-favicon.svg" alt="Suryansh's Portfolio"></a></div>
-            <ul class="nav-links">
+    <nav class="navbar">
+            <div class="logo"><a href="index.html"><img src="/assets/logo.png" alt="StreakFit"></a></div>
+            <ul class="nav-links" id="nav">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#resume">DashBoard</a></li>
+                <li><a href="#features">Features</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#log">Login</a></li>
             </ul>
@@ -23,10 +23,45 @@
                 <div class="line3"></div>
             </div>
         </nav>
-    <h1>
-        Welcome to StreakFit!
-        <br>
-        <small>Track your fitness streaks and stay motivated!</small>
-    </h1>
+        <main>
+            <hero class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to StreakFit</h1>
+                    <p>Your journey to fitness starts here!</p>
+                    <a href="#about" class="btn">Learn More</a>
+                </div>
+            </hero>
+            <section id="about" class="about">
+                <h2>About StreakFit</h2>
+                <p>StreakFit is your personal fitness companion, helping you track your workouts and stay motivated.</p>
+                <p>Whether you're a beginner or a seasoned athlete, StreakFit provides the tools you need to achieve your fitness goals.</p>
+            </section>
+            <section id="features" class="features">
+                <h2>Dashboard</h2>
+                <p>Track your progress, set goals, and stay on top of your fitness journey with our intuitive dashboard.</p>
+                <p>Monitor your workouts, view your streaks, and celebrate your achievements.</p>
+            </section>
+            <section id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? We'd love to hear from you!</p>
+                <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+                <p>For immediate assistance, you can also reach us at:</p>
+                <p>Email us at <a href="mailto:blahblah@gmail.com" title="email"></a></p>
+                <p>Follow us on social media for updates and tips.</p>
+            </section>
+            
+        </main>
+    <script src="/assets/script.js"></script>
 </body>
 </html>
