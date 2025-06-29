@@ -9,8 +9,8 @@
 
 :root{
     /* Brand Colors */
-    --primary-color: #2f6a87;      /* Fresh Green for buttons, highlights */
-    --secondary-color: #9a5131;    /* Vibrant Orange for accents, calls to action */
+    --primary-color: rgb(234, 234, 234);      /* Fresh Green for buttons, highlights */
+    --secondary-color: white;    /* Vibrant Orange for accents, calls to action */
     --accent-color: #ea6c36;       /* Bright Yellow for highlights, badges */
 
     /* Backgrounds & Layout */
@@ -35,6 +35,13 @@
 
     --transition: all 0.3s ease; /* Smooth transitions for hover effects */
     --transition-back: all 0.7s ease; /* Smooth transitions for hover effects */
+    --gradient1: linear-gradient(90deg, #7182ff 0, #3cff52 100%);
+}
+
+a{
+    text-decoration: none;
+    /* color: var(--text-dark); */
+    transition: var(--transition);
 }
 
 body{
@@ -47,6 +54,10 @@ body{
 body, html{
     width: 100%;
     height: 100%;
+}
+
+.primary-background{
+    background: var(--primary-color);
 }
 
 .navbar{
@@ -148,7 +159,7 @@ body, html{
 }
 
 .navbar ul li a {
-    color: var(--card-bg);
+    color: var(--text-dark);
 }
 
 .navbar ul li a:hover {
@@ -223,4 +234,111 @@ body, html{
         transition: var(--transition);
     }
 
+}
+
+hero, .about{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('/assets/hero-bg.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--text-dark);
+    font-size: 1.6rem ;
+    padding: 2rem;
+}
+
+.headtile{
+    -webkit-text-fill-color: transparent;
+    background: -webkit-radial-gradient(circle, #7182ff 0, #3cff52 100%);
+    background: var(--gradient1);
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* -webkit-animation: _ngcontent-ng-c3375122744_textShine 3s ease-in-out infinite alternate; */
+    animation: textshine 3s ease-in-out infinite alternate;
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    /* padding-top: 1rem; */
+}
+
+.btn{
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    text-align: center;
+    align-self: center;
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    padding: 12px 20px;
+    /* padding-bottom: 20px; */
+    font-weight:700;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+}
+
+.btn:hover{
+    background-color: var(--card-bg);
+    /* color: var(--text-light); */
+    transition: var(--transition);
+}
+
+.hero-content a{
+    transition: var(--transition);
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    padding: 2rem 5rem 4rem 5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    gap: 1.5rem;
+}
+
+.about h2{
+    font-size: 2rem;
+    color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes textshine{
+    0% {
+    background-position: 0 50%;
+}
+15% {
+    background-position: 0 50%;
+}
+85% {
+    background-position: 100% 100%;
+}
+100% {
+    background-position: 100% 100%;
+}
 }
