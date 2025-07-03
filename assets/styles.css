@@ -29,6 +29,8 @@
     radial-gradient(circle at 50% 1%, #78c1e3 0%, transparent 90%),
     radial-gradient(circle at 50% 95%, #ffe169 0%, transparent 90%),
     #0a0a2a;
+
+    /* --gradient-greenblue: linear-gradient(90deg, #7182ff 0%, #3cff52 100%); */
     --shadow-1: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-2: 0 6px 12px rgba(0, 0, 0, 0.1);
     --shadow-3: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -127,6 +129,12 @@ body {
 
 .big-ol-gradient-2 {
     background: var(--big-ol-gradient-2);
+    background-size: cover;
+    background-position: center;
+}
+
+.gradient-greenblue {
+    background: var(--gradient-greenblue);
     background-size: cover;
     background-position: center;
 }
@@ -270,7 +278,7 @@ nav ul li a:hover {
 
 .profile-upload {
     position: relative;
-    width: 15em;
+    width: 15rem;
     height: 15em;
     margin: 0 auto 2rem;
 }
@@ -375,15 +383,29 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
+.about-text h3 {
+    text-align: center;
+    /* margin-bottom: 1rem; */
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.about-text p {
+    text-align: center;
+    /* margin-bottom: 2rem; */
+    color: var(--light-text);
+    font-size: 1rem;
+}
+
 .about-content {
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: 0 auto;
 }
 
 .about-flex-container {
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    align-items:center;
+    gap: 5rem;
     margin-bottom: 3rem;
 }
 
@@ -405,17 +427,20 @@ nav ul li a:hover {
 }
 
 .about-laptop-img {
-    width: 100%;
-    height: auto;
+    width: 110%;
+    height: fit-content;
     display: block;
     border-radius: 10px;
 }
 
 .about-text {
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    gap: 1rem;
     text-align: left;
     color: var(--text-color);
-    font-size: 0.9em;
+    font-size: 1rem;
 }
 
 .typed-cursor {
@@ -426,10 +451,11 @@ nav ul li a:hover {
     .about-flex-container {
         flex-direction: column;
         align-items: center;
+        gap: 2rem;
     }
 
     .about-image {
-        width: 30vw;
+        /* width: 30vw; */
         height: auto;
     }
 
@@ -446,7 +472,7 @@ nav ul li a:hover {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1.8rem;
-    color: var(--orange-yellow-crayola);
+    color: var(--text-color);
 }
 
 .skills-grid {
@@ -807,9 +833,6 @@ footer {
         transition: var(--transition);
     }
 
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
 
     .about,
     .projects,
@@ -1241,4 +1264,19 @@ article.active {
 .example-2 .icon-content a[data-social="email"] .filled,
 .example-2 .icon-content a[data-social="email"] ~ .tooltip {
     background: linear-gradient( 45deg, #4caf50, #1e88e5, #e53935, #c62828, #fbc02d );
+}
+
+@media screen and (max-width: 600px) {
+    .profile-upload {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
 }
