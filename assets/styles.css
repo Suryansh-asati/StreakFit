@@ -30,7 +30,7 @@
     radial-gradient(circle at 50% 95%, #ffe169 0%, transparent 90%),
     #0a0a2a;
 
-    /* --gradient-greenblue: linear-gradient(90deg, #7182ff 0%, #3cff52 100%); */
+    --gradient-greenblue: linear-gradient(90deg, #7182ff 0%, #3cff52 100%);
     --shadow-1: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-2: 0 6px 12px rgba(0, 0, 0, 0.1);
     --shadow-3: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -172,7 +172,7 @@ body {
 }
 
 .navbar.scrolled a{
-    color: var(--orange-yellow-crayola);
+    color: var(--eerie-black-2);
 }
 
 .logo {
@@ -213,7 +213,7 @@ body {
 .nav-links a {
     text-decoration: none;
     font-size: 0.8rem;
-    color: var(--orange-yellow-crayola);
+    color: var(--eerie-black-2);
     font-weight: 500;
     transition: var(--transition-back);
     position: relative;
@@ -371,7 +371,7 @@ nav ul li a:hover {
 /* About Section */
 .about {
     padding: 5rem 10%;
-    /* background: url(download.svg); */
+    background: var(--gradient-greenblue);
     background-size: cover;
 }
 
@@ -390,10 +390,19 @@ nav ul li a:hover {
     font-size: 1.2rem;
 }
 
+.h3-about-center {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+
+
 .about-text p {
     text-align: center;
     /* margin-bottom: 2rem; */
-    color: var(--light-text);
+    color: var(--eerie-black-2);
     font-size: 1rem;
 }
 
@@ -401,7 +410,12 @@ nav ul li a:hover {
     /* max-width: 800px; */
     margin: 0 auto;
 }
-
+@media screen and (min-width: 1200px) {
+    .about-text p{
+        font-size: 1.2rem;
+    }
+    
+}
 .about-flex-container {
     display: flex;
     align-items:center;
