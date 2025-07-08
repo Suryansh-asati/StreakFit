@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Geist&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Electrolize&family=Geist&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --backgorund-color: #010101;
+    --light-color: #ffffff;
+    --light1-color: #d4d4d4;
+    --light2-color: #a1a1a1;
+    --dark-color: #0a0a0a;
+    --dark1-color: #0f0f0f;
+    --black: #000000;
+    --accent-color: #dafc44;
+
+    --font-family: 'Anton', sans-serif;
+    --font-family-1:'Electrolize', 'Poppins', sans-serif;
+    --text-size: 4rem;
+    --text-medium: 3rem;
+    --text-small: 2rem;
+
+    --transition: all 0.3s ease;
+    --transition-hover: all 0.3s ease-in-out;
+}
+
+body{
+    background-color: var(--backgorund-color);
+    color: var(--light-color);
+    font-family: var(--font-family);
+}
+
+a{
+    text-decoration: none;
+    color: var(--light-color);
+    transition: color 0.3s ease;
+}
+
+a::after{
+    content: '';
+    display: block;
+    /* width: 0; */
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+a:hover{
+    color: var(--accent-color);
+}
+
+a::after:hover{
+    width: 100%;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--light1-color);
+    padding: 0 2rem;
+}
+
+.nav-2{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+nav a img{
+    width: auto;
+    height: 40px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    /* margin-left: auto; */
+}
+
+.nav-links a{
+    font-size: 1rem;
+    font-family: var(--font-family-1);
+}
+
+.auth-buttons{
+    /* margin-left: auto; */
+    display: flex;
+    align-items: center;
+    
+}
+
+.auth-buttons a{
+    background: var(--accent-color);
+    padding: 5px 15px;
+    transform: skew(-10deg);
+    color: var(--dark-color);
+    transition: var(--transition-hover);
+}
+
+.auth-buttons a:hover{
+    background: var(--light-color);
+    color: var(--dark-color);
+}
