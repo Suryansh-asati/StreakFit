@@ -120,15 +120,23 @@ nav a img{
     
 }
 
+.getstarted-span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .getstarted{
-    height: 50px;
+    height: max-content;
     text-align: center;
-    font-weight: 600;
+    font-weight: 800;
     background: var(--accent-color);
     padding: 15px 15px;
     transform: skew(-10deg);
     color: var(--dark-color);
     transition: var(--transition-hover);
+    font-family: var(--font-family-anta);
 }
 
 .getstarted-2{
@@ -189,9 +197,6 @@ hero-text p{
 }
 
 hero-cta{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 2rem;
 }
 
@@ -202,11 +207,79 @@ hero-cta{
     width: 100%;
     height: inherit;
     background:
-    radial-gradient(circle at 20% 40%, rgba(0, 102, 204, 0.3), transparent 50%),
-    radial-gradient(circle at 80% 40%, rgba(204, 0, 102, 0.3), transparent 50%),
-    radial-gradient(circle at 50% 60%, rgba(102, 0, 204, 0.3), transparent 50%),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), #000);
+    radial-gradient(circle at 0% 100%, rgba(0, 102, 204, 0.3), transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(204, 0, 102, 0.3), transparent 50%),
+    radial-gradient(ellipse at 50% 100%, rgba(102, 0, 204, 0.3), transparent 50%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #000);
     background-color: #111; /* fallback */
     background-blend-mode: screen;
     z-index: -1;
+}
+
+.chip{
+    display: inline-block;
+    /* padding: 0.5rem 1rem; */
+    color: var(--accent-color);
+    font-size: 0.875rem;
+    font-family: var(--font-family-anton);
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+about{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: center;
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.about-text{
+    width: 70%;
+}
+
+.about-text h2{
+    font-size: var(--text-small);
+    font-family: var(--font-family-anton);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.about-text p{
+    color: var(--light2-color);
+}
+
+.about-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+features{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: center;
+    width: 80%;
+    margin: 4rem auto;
+}
+
+/* .feature-text{
+    width: 70%;
+} */
+
+.feature-text h2{
+    font-size: var(--text-medium);
+    font-family: var(--font-family-anton);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.feature-text p{
+    color: var(--light2-color);
 }
