@@ -36,6 +36,11 @@ body{
     font-family: var(--font-family-elect);
 }
 
+.small-text{
+    font-size: 0.875rem;
+    color: var(--light2-color);
+}
+
 a{
     text-decoration: none;
     color: var(--light-color);
@@ -94,6 +99,7 @@ nav .logo{
     gap: 1rem;
     text-decoration: none;
     color: var(--light-color);
+    font-family: var(--font-family-anton);
 }
 
 nav a img{
@@ -189,7 +195,7 @@ hero-text h1 span{
 
 hero-text p{
     font-size: 1rem;
-    font-family: var(--font-family-geist);
+    /* font-family: var(--font-family-geist); */
     /* margin-top: 1rem; */
     width: 80%;
     margin-left: auto;
@@ -262,11 +268,11 @@ about{
 
 features{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items:flex-start;
-    justify-content: center;
     width: 80%;
     margin: 4rem auto;
+    gap: 3rem;
 }
 
 /* .feature-text{
@@ -282,4 +288,29 @@ features{
 
 .feature-text p{
     color: var(--light2-color);
+}
+
+.featurecards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+.individualfeature{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    /* background: var(--dark1-color); */
+    padding: 2rem;
+    border-radius: 10px;
+    transition: var(--transition-hover);
+    gap: 1.2rem;
+    font-weight: 100;
+}
+
+.individualfeature i{
+    font-size: 2rem;
+    color: var(--accent-color);
 }
