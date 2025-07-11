@@ -87,14 +87,14 @@ nav{
     gap: 2rem;
 }
 
-nav .logo{
+.logo{
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
 
-nav .logo{
+.logo{
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -103,7 +103,7 @@ nav .logo{
     font-family: var(--font-family-anton);
 }
 
-nav a img{
+nav a img, footer logo img{
     width: auto;
     height: 40px;
 }
@@ -305,6 +305,7 @@ features{
     justify-content: flex-start;
     /* background: var(--dark1-color); */
     padding: 2rem;
+    padding-left: 0;
     border-radius: 10px;
     transition: var(--transition-hover);
     gap: 1.2rem;
@@ -316,18 +317,88 @@ features{
     color: var(--accent-color);
 }
 
-.feature-2{
+/* .feature-2{
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-between;
-}
+} */
 
 .feature-img{
-    position: relative;
     width: 30%;
-    height:fit-content;
+    height: fit-content;
     border-radius: 10px;
     margin-top: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: 2rem;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    
+    gap: 30px;
+}
+
+.footer-links a{
+    font-size: 0.875rem;
+    color: var(--light2-color);
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    hero-text h1{
+        font-size: 2.5rem;
+    }
+
+    .feature-img{
+        width: 100%;
+    }
+
+    .feature-2{
+        flex-direction: column;
+    }
+
+    .feature-text, .about-text{
+        width: 100%;
+    }
+
+    .about-btn{
+        width: 100%;
+        margin-top: 2rem;
+    }
 }
