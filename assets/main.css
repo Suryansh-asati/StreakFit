@@ -326,7 +326,7 @@ features{
 .feature-img{
     position: relative;
     width: 30%;
-    height: max-content;
+    height:fit-content;
     border-radius: 10px;
     margin-top: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
