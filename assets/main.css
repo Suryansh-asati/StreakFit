@@ -217,6 +217,10 @@ hero-cta{
     gap: 2rem;
 }
 
+.about-hero{
+    height: 500px;
+}
+
 .gradient-bg {
     position: absolute;
     top: 0;
@@ -248,15 +252,15 @@ about, ourstory{
     flex-direction: row;
     align-items:flex-start;
     justify-content: center;
-    width: 80%;
-    margin: 4rem auto;
+    width: 100%;
+    padding: 4rem;
 }
 
 .about-text{
     width: 70%;
 }
 
-.about-text h2, ourstory h2{
+.section-title{
     font-size: var(--text-medium);
     font-family: var(--font-family-anton);
     margin-bottom: 1rem;
@@ -404,10 +408,28 @@ footer{
 }
 
 ourstory{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    /* background: var(--dark1-color); */
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    /* padding: 2rem; */
+}
+
+ourstory .chip{
+    color: var(--dark-color);
+    font-size: 0.875rem;
+    font-family: var(--font-family-anton);
+    margin-bottom: 1rem;
+}
+
+.ourstory-text h2{
+    color: var(--dark-color);
+}
+
+.ourstory-text .getstarted{
+    background: var(--accent-color);
 }
 
 .ourstorytextpara{
@@ -415,6 +437,7 @@ ourstory{
     font-size: 1rem;
     line-height: 1.5;
     gap: 1rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     /* background: var(--dark1-color);
@@ -423,16 +446,16 @@ ourstory{
 }
 
 .os-text1{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-family: var(--font-family-elect);
-    padding: 1rem;
+    padding: 1.3rem;
     color: var(--light-color);
     font-weight: 600;
     line-height: 1.5;
     text-align: center;
     display: flex;
     flex-direction: column;
-    background: var(--dark1-color);
+    background: var(--black);
 }
 
 .os-text1 span{
@@ -450,15 +473,15 @@ ourstory{
 }
 
 .ostext-inside{
-    color: var(--light2-color);
+    color: var(--dark-color);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.3rem;
     /* padding-bottom: 1rem; */
 }
 
 .bold{
     font-weight: 600;
-    color: var(--accent-color);
+    color: var(--backgorund-color);
 }
 
 .uppercase{
@@ -467,7 +490,85 @@ ourstory{
 
 .center-text{
     text-align: center;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 80%; */
+    padding: 4rem auto;
+    background: var(--accent-color);
+    margin: 0 auto;
+}
+
+.mission h2 {
+    /* font-size: var(--text-medium);
+    font-family: var(--font-family-anton); */
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.mission .chip{
+    color: var(--dark-color);
+}
+
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.mission-item {
+    flex: 0 0 calc(33.33% - 30px);
+    background-color: var(--black);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    justify-self: center;
+    text-align: center;
+    transition: var(--transition-back);
+}
+
+.mission-item:hover {
+    transition: var(--transition);
+    /* transform: translateY(-10px) rotate(1deg); */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.mission-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.mission-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.mission-item p {
+    color: var(--text-color)
 }
 
 @media (max-width: 768px) {
