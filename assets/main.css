@@ -157,6 +157,11 @@ nav a img, footer logo img{
     color: var(--dark-color);
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
 hero{
     position: relative;
     width: 100%;
@@ -390,11 +395,56 @@ footer{
     text-align: right;
 }
 
+.footer-text{
+    width: 100%;
+    font-size: 0.75rem;
+    color: var(--light2-color);
+    text-align: left;
+}
+
 @media (max-width: 768px) {
     nav{
-        flex-direction: column;
+        /* flex-direction: column; */
         height: auto;
         padding: 1rem;
+    }
+
+    .nav-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: scroll;
+        overflow-x: hidden;
+        position: absolute;
+        right: -100%;
+        top: 100%;
+        /* height: calc(100vh - 100px); */
+        /* background: var(--big-ol-gradient-2); */
+        background: linear-gradient(135deg, black, grey);
+        opacity: 0.959;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        transition: var(--transition);
+        border-radius: 0px 0 0 10px;
+    }
+
+        .nav-2.active {
+        right: 0;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hamburger{
+        display: block;
+        font-size: 1.5rem;
+        color: var(--light-color);
     }
 
     hero-text h1{
@@ -411,6 +461,12 @@ footer{
 
     .feature-text, .about-text{
         width: 100%;
+    }
+
+    about{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .about-btn{
