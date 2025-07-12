@@ -245,6 +245,8 @@ hero-cta{
     font-family: var(--font-family-anton);
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
 }
 
 about, ourstory{
