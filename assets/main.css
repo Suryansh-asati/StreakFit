@@ -456,6 +456,8 @@ ourstory .chip{
     display: flex;
     flex-direction: column;
     background: var(--black);
+    /* border-radius: 10px; */
+    transform: skew(-10deg);
 }
 
 .os-text1 span{
@@ -519,6 +521,7 @@ ourstory .chip{
     /* font-size: var(--text-medium);
     font-family: var(--font-family-anton); */
     margin-bottom: 1rem;
+    text-align: center;
     font-weight: 600;
 }
 
@@ -543,27 +546,32 @@ ourstory .chip{
     transition: var(--transition-back);
 }
 
+.mission-item h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
 .mission-item:hover {
     transition: var(--transition);
     /* transform: translateY(-10px) rotate(1deg); */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.mission-item img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
+.mission-item i {
+    font-size: 3rem;
+    /* color: var(--accent-color); */
+    margin-bottom: 10px;
+    display: block;
 }
 
-.mission-item h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: var(--text-color);
-}
 
 .mission-item p {
-    color: var(--text-color)
+    font-size: 1rem;
+    color: var(--light2-color);
+    line-height: 1.5;
+    font-family: var(--font-family-geist);
 }
 
 @media (max-width: 768px) {
