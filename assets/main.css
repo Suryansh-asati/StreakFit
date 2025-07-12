@@ -242,7 +242,7 @@ hero-cta{
     margin-bottom: 0.5rem;
 }
 
-about{
+about, ourstory{
     display: flex;
     flex-direction: row;
     align-items:flex-start;
@@ -255,14 +255,14 @@ about{
     width: 70%;
 }
 
-.about-text h2{
+.about-text h2, ourstory h2{
     font-size: var(--text-small);
     font-family: var(--font-family-anton);
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
-.about-text p{
+.about-text p, ourstory p{
     color: var(--light2-color);
 }
 
@@ -402,6 +402,56 @@ footer{
     text-align: left;
 }
 
+ourstory{
+    display: flex;
+    flex-direction: column;
+}
+
+.ourstorytextpara{
+    color: var(--light2-color);
+    font-size: 1rem;
+    line-height: 1.5;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.os-text1{
+    /* font-size: 1.5rem; */
+    font-family: var(--font-family-anta);
+    /* margin-bottom: 1rem; */
+    display: flex;
+    flex-direction: column;
+}
+
+.os-text1 span{
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.os-text2{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: var(--font-family-geist);
+    gap: 1rem;
+}
+
+.ostext-inside{
+    color: var(--light2-color);
+    font-weight: 400;
+    /* padding-bottom: 1rem; */
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.center-text{
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     nav{
         /* flex-direction: column; */
@@ -413,14 +463,14 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow: scroll;
+        /* overflow: scroll; */
         overflow-x: hidden;
         position: absolute;
         right: -100%;
         top: 100%;
         /* height: calc(100vh - 100px); */
         /* background: var(--big-ol-gradient-2); */
-        background: linear-gradient(135deg, black, grey);
+        background: rgba(10, 10, 10, 0.8);
         opacity: 0.959;
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
@@ -431,7 +481,7 @@ footer{
         border-radius: 0px 0 0 10px;
     }
 
-        .nav-2.active {
+    .nav-2.active {
         right: 0;
     }
 
