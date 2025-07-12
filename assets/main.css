@@ -510,8 +510,8 @@ ourstory .chip{
     align-items: center;
     justify-content: center;
     /* width: 80%; */
-    padding: 4rem auto;
-    background: var(--accent-color);
+    padding: 4rem ;
+    background: var(--dark1-color);
     margin: 0 auto;
 }
 
@@ -520,11 +520,6 @@ ourstory .chip{
     font-family: var(--font-family-anton); */
     margin-bottom: 1rem;
     font-weight: 600;
-    color: var(--dark-color);
-}
-
-.mission .chip{
-    color: var(--dark-color);
 }
 
 .mission-content {
