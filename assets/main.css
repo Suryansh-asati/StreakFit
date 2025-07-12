@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior:smooth ;
 }
 
 :root{
@@ -256,7 +257,7 @@ about, ourstory{
 }
 
 .about-text h2, ourstory h2{
-    font-size: var(--text-small);
+    font-size: var(--text-medium);
     font-family: var(--font-family-anton);
     margin-bottom: 1rem;
     font-weight: 600;
@@ -312,10 +313,10 @@ features{
     flex-direction: column;
     /* align-items: center; */
     justify-content: flex-start;
-    /* background: var(--dark1-color); */
+    background: var(--black);
     padding: 2rem;
-    padding-left: 0;
-    border-radius: 10px;
+    /* padding-left: 0; */
+    /* border-radius: 10px; */
     transition: var(--transition-hover);
     gap: 1.2rem;
     font-weight: 100;
@@ -403,8 +404,10 @@ footer{
 }
 
 ourstory{
+    width: 80%;
     display: flex;
     flex-direction: column;
+    /* background: var(--dark1-color); */
 }
 
 .ourstorytextpara{
@@ -414,14 +417,22 @@ ourstory{
     gap: 1rem;
     display: flex;
     flex-direction: column;
+    /* background: var(--dark1-color);
+    padding: 2rem;
+    border-radius: 10px; */
 }
 
 .os-text1{
-    /* font-size: 1.5rem; */
-    font-family: var(--font-family-anta);
-    /* margin-bottom: 1rem; */
+    font-size: 1.1rem;
+    font-family: var(--font-family-elect);
+    padding: 1rem;
+    color: var(--light-color);
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    background: var(--dark1-color);
 }
 
 .os-text1 span{
@@ -433,7 +444,7 @@ ourstory{
 .os-text2{
     display: flex;
     flex-direction: column;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: var(--font-family-geist);
     gap: 1rem;
 }
@@ -441,15 +452,22 @@ ourstory{
 .ostext-inside{
     color: var(--light2-color);
     font-weight: 400;
+    font-size: 1rem;
     /* padding-bottom: 1rem; */
 }
 
 .bold{
     font-weight: 600;
+    color: var(--accent-color);
+}
+
+.uppercase{
+    text-transform: uppercase;
 }
 
 .center-text{
     text-align: center;
+    font-size: 1.3rem;
 }
 
 @media (max-width: 768px) {
@@ -522,6 +540,10 @@ ourstory{
     .about-btn{
         width: 100%;
         margin-top: 2rem;
+    }
+
+    .os-text1, .os-text2{
+        text-align: center;
     }
 }
 
