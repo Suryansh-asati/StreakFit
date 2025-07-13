@@ -72,13 +72,13 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    /* height: 80px; */
     background: var(--dark-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid var(--light1-color);
-    padding: 0 2rem;
+    padding: 0.5rem 2rem;
     z-index: 1000;
 }
 
@@ -390,13 +390,18 @@ footer{
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
+    
 }
 
 .footer-links a{
     font-size: 0.875rem;
-    color: var(--light2-color);
+    color: var(--dark-color);
     text-align: right;
+    font-weight: 600;
+    padding: 0.2rem;
+    background-color: var(--accent-color);
+    transform: skew(-10deg);
 }
 
 .footer-text{
@@ -672,5 +677,31 @@ ourstory .chip{
     }
     100% {
         background-position: 100% 100%;
+    }
+}
+
+nav, footer{
+    background: linear-gradient(
+    135deg,
+    #121212 25%,
+    #1a1a1a 25%,
+    #1a1a1a 50%,
+    #121212 50%,
+    #121212 75%,
+    #1a1a1a 75%,
+    #1a1a1a
+    );
+    background-size: 40px 40px;
+
+  /* Animation */
+    animation: move 4s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 40px 40px;
     }
 }
