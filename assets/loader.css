@@ -22,7 +22,7 @@ Inspired by shenanigans.shoghisimon.ca/collection/css-rain-bg/
         hsl(0 0 4%) 2px
     );
     background-size: 8px 8px;
-    animation: 5s ease-in-out hiii infinite;
+    /* animation: 5s ease-in-out hiii infinite; */
     --f: blur(3em) brightness(9);
 }
 
@@ -87,7 +87,7 @@ Inspired by shenanigans.shoghisimon.ca/collection/css-rain-bg/
     inset: -145%;
     rotate: -45deg;
     --c: #dafc44;
-    --c1: #dafc44;
+    --c1: #0066cc;
     background-image: radial-gradient(4px 100px at 0px 235px, var(--c), #0000),
         radial-gradient(4px 100px at 300px 235px, var(--c), #0000),
         radial-gradient(3px 4px at 150px 117.5px, var(--c1) 100%, #0000 150%),
