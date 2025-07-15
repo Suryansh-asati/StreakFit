@@ -9,12 +9,34 @@
     <meta name="author" content="StreakFit Team">
     <link rel="icon" href="assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/loader.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
 
 </head>
-<body>
-    
+<body class="loading">
+    <!-- This is preloader content. It will be replaced once the page is fully loaded. --> 
+    <div class="loader" id="load">
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+    </div>
+
     <nav>
         <a class="logo" href="index.html">
             <img src="assets/logo.png" alt="StreakFit">
