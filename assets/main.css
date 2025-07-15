@@ -205,7 +205,7 @@ hero-text h1 span{
 
 hero-text p{
     font-size: 1rem;
-    /* font-family: var(--font-family-geist); */
+    font-family: var(--font-family-geist);
     /* margin-top: 1rem; */
     width: 80%;
     margin-left: auto;
@@ -217,7 +217,7 @@ hero-cta{
 }
 
 .about-hero{
-    height: 500px;
+    height: 700px;
 }
 
 .gradient-bg {
@@ -417,23 +417,25 @@ ourstory{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--accent-color);
-    /* padding: 2rem; */
+    background: var(--dark1-color);
+    padding: 2rem;
+    margin:  auto;
 }
 
 ourstory .chip{
-    color: var(--dark-color);
+    color: var(--light-color);
     font-size: 0.875rem;
     font-family: var(--font-family-anton);
     margin-bottom: 1rem;
 }
 
 .ourstory-text h2{
-    color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .ourstory-text .getstarted{
     background: var(--accent-color);
+    color: var(--dark-color);
 }
 
 .ourstorytextpara{
@@ -479,7 +481,7 @@ ourstory .chip{
 }
 
 .ostext-inside{
-    color: var(--dark-color);
+    color: var(--light-color);
     font-weight: 400;
     font-size: 1.3rem;
     /* padding-bottom: 1rem; */
@@ -487,7 +489,7 @@ ourstory .chip{
 
 .bold{
     font-weight: 600;
-    color: var(--backgorund-color);
+    color: var(--light-color);
 }
 
 .uppercase{
@@ -508,6 +510,7 @@ ourstory .chip{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
 .mission {
@@ -531,7 +534,7 @@ ourstory .chip{
 
 .mission-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
@@ -542,12 +545,13 @@ ourstory .chip{
 .mission-item {
     flex: 0 0 calc(33.33% - 30px);
     background-color: var(--black);
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     justify-self: center;
     text-align: center;
     transition: var(--transition-back);
+    height: 100%;
 }
 
 .mission-item h3{
@@ -576,6 +580,15 @@ ourstory .chip{
     color: var(--light2-color);
     line-height: 1.5;
     font-family: var(--font-family-geist);
+}
+
+@media (max-width: 900px){
+    .mission-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 768px) {
