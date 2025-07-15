@@ -28,6 +28,7 @@
     --text-small: 2rem;
 
     --transition: all 0.3s ease;
+    --transition-back: all 0.5s ease-in-out;
     --transition-hover: all 0.3s ease-in-out;
 }
 
@@ -436,13 +437,15 @@ ourstory .chip{
 .ourstory-text .getstarted{
     background: var(--accent-color);
     color: var(--dark-color);
+    width: max-content;
+    margin: 0 auto;
 }
 
 .ourstorytextpara{
     color: var(--light2-color);
     font-size: 1rem;
     line-height: 1.5;
-    gap: 1rem;
+    gap: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -464,6 +467,8 @@ ourstory .chip{
     background: var(--black);
     /* border-radius: 10px; */
     transform: skew(-10deg);
+    width: max-content;
+    margin: 0 auto;
 }
 
 .os-text1 span{
@@ -476,8 +481,13 @@ ourstory .chip{
     display: flex;
     flex-direction: column;
     font-size: 1.1rem;
-    font-family: var(--font-family-geist);
+    font-family: var(--font-family-anta);
     gap: 1rem;
+    /* background: var(--black); */
+    padding: 1.3rem;
+    border-radius: 10px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .ostext-inside{
@@ -494,6 +504,10 @@ ourstory .chip{
 
 .uppercase{
     text-transform: uppercase;
+}
+
+.accent-color{
+    color: var(--accent-color);
 }
 
 .center-text{
@@ -540,6 +554,7 @@ ourstory .chip{
     gap: 30px;
     width: 100%;
     align-items: stretch;
+    /* height: 100%; */
 }
 
 .mission-item {
@@ -563,8 +578,8 @@ ourstory .chip{
 
 .mission-item:hover {
     transition: var(--transition);
-    /* transform: translateY(-10px) rotate(1deg); */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px #dafc4444;
 }
 
 .mission-item i {
