@@ -708,6 +708,104 @@ ourstory .chip{
     }
 }
 
+/* Leaderboard Preview Section */
+.leaderboard-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background: var(--dark-color);
+    margin: 0 auto;
+}
+
+.leaderboard-preview .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.leaderboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: var(--black);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+    font-family: var(--font-family-anta);
+    color: var(--light-color);
+    border-bottom: 1px solid var(--dark1-color);
+    transition: var(--transition-hover);
+}
+
+.leaderboard-item:last-child {
+    border-bottom: none;
+}
+
+.leaderboard-item:hover {
+    background: var(--dark1-color);
+    transform: translateX(5px);
+}
+
+.leaderboard-item:first-child {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Final Call-to-Action Section */
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    background: var(--backgorund-color);
+    text-align: center;
+}
+
+.cta-headline {
+    font-size: 3rem;
+    font-family: var(--font-family-anton);
+    color: var(--light-color);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-section .getstarted {
+    font-size: 1.2rem;
+    padding: 20px 30px;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .cta-headline {
+        font-size: 2rem;
+    }
+    
+    .leaderboard-item {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
 nav, footer{
     background: linear-gradient(
     135deg,
