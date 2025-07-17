@@ -255,6 +255,7 @@ about, ourstory{
     justify-content: center;
     width: 100%;
     padding: 4rem;
+    background: var(--dark1-color);
 }
 
 .about-text{
@@ -418,7 +419,7 @@ ourstory{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--dark1-color);
+    background: var(--dark-color);
     padding: 6rem 2rem;
     margin: auto;
 }
@@ -510,7 +511,7 @@ ourstory .chip{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-bottom: 1.5rem; */
+    margin-bottom: 1.5rem;
     position: relative;
     overflow: hidden;
 }
@@ -534,6 +535,13 @@ ourstory .chip{
     justify-content: center;
 }
 
+.card-content h3 {
+    font-size: 1.5rem;
+    font-family: var(--font-family-anta);
+    color: var(--light-color);
+    margin-bottom: 0.5rem;
+}
+
 .card-title {
     font-size: 1.5rem;
     font-family: var(--font-family-anton);
@@ -543,17 +551,10 @@ ourstory .chip{
     letter-spacing: 1px;
 }
 
-.card-text {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--light2-color);
-    font-family: var(--font-family-geist);
-}
-
 /* Highlight Text */
 .highlight-text {
     color: var(--accent-color);
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: underline;
     text-decoration-color: var(--accent-color);
     text-underline-offset: 3px;
@@ -562,7 +563,7 @@ ourstory .chip{
 .brand-highlight {
     color: var(--accent-color);
     font-weight: 800;
-    font-family: var(--font-family-anton);
+    /* font-family: var(--font-family-anton); */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -778,19 +779,21 @@ ourstory .chip{
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 15px;
-    color: var(--accent-color);
+    color: var(--light-color);
+    font-family: var(--font-family-anta);
 }
 
 .mission-item:hover {
     transition: var(--transition);
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px #dafc4444;
+    box-shadow: 10px 10px 5px 5px ;
+    box-shadow: var(--dark-color);
 }
 
 .mission-item i {
     font-size: 3rem;
-    /* color: var(--accent-color); */
-    margin-bottom: 10px;
+    color: var(--accent-color);
+    margin-bottom: 20px;
     display: block;
 }
 
@@ -807,7 +810,7 @@ ourstory .chip{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 30px;
     }
 }
 
