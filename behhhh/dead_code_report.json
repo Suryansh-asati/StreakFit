@@ -1,0 +1,40 @@
+{
+  "missing_files": [],
+  "unused_files": [],
+  "dead_links": [],
+  "duplicate_files": [],
+  "inconsistent_paths": [],
+  "unused_css_rules": [
+    {
+      "file": "assets/main.css",
+      "unused_count": 33,
+      "sample_unused": [
+        "#ff9ff3",
+        "#b8e944",
+        ".ourstorytextpara",
+        ".auth-buttons",
+        ".card-title",
+        ".about-btn",
+        ".secondary-card",
+        "#d4d4d4",
+        ".card-text",
+        ".feature-2"
+      ]
+    },
+    {
+      "file": "assets/loader.css",
+      "unused_count": 9,
+      "sample_unused": [
+        ".io",
+        ".shoghisimon",
+        ".fade-out",
+        "#dafc44",
+        ".hamster__limb--fl",
+        ".ca",
+        ".hamster__limb--fr",
+        ".hamster__limb--br",
+        ".hamster__limb--bl"
+      ]
+    }
+  ]
+}
