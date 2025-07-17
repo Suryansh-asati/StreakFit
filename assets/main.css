@@ -482,7 +482,7 @@ ourstory .chip{
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 95px;
     background: linear-gradient(90deg, var(--accent-color), var(--light-color));
     opacity: 0;
     transition: var(--transition-hover);
@@ -513,7 +513,8 @@ ourstory .chip{
     justify-content: center;
     margin-bottom: 1.5rem;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .card-icon i {
@@ -555,9 +556,10 @@ ourstory .chip{
 .highlight-text {
     color: var(--accent-color);
     font-weight: 500;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-decoration-color: var(--accent-color);
     text-underline-offset: 3px;
+    margin-bottom: 1.5rem;
 }
 
 .brand-highlight {
