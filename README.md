@@ -75,13 +75,15 @@ StreakFit is a modern, responsive web application designed to help users track t
 StreakFit/
 │
 ├── index.html              # Main HTML file
-├── README.md              # Project documentation
+├── about.html              # About page
+├── README.md               # Project documentation
+├── Contribute.md           # Contribution guide
 │
 └── assets/
-    ├── logo.png           # StreakFit logo/favicon
-    ├── styles.css         # Main stylesheet with custom CSS variables
-    ├── sample.css         # Additional styling (navbar variants)
-    └── script.js          # JavaScript functionality
+    ├── logo.png            # StreakFit logo/favicon
+    ├── main.css            # Main stylesheet
+    ├── loader.css          # Preloader styling
+    └── script.js           # JavaScript functionality
 ```
 
 ## 🛠️ Technical Details
@@ -124,7 +126,7 @@ StreakFit/
 ## 🔧 Customization
 
 ### Modifying Colors
-Edit the CSS custom properties in `assets/styles.css`:
+Edit the CSS custom properties in `assets/main.css`:
 ```css
 :root {
     --primary-color: #your-color;
@@ -135,7 +137,7 @@ Edit the CSS custom properties in `assets/styles.css`:
 
 ### Adding New Sections
 1. Add the section to `index.html`
-2. Add corresponding styles to `assets/styles.css`
+2. Add corresponding styles to `assets/main.css`
 3. Update navigation links in the navbar
 4. Add smooth scrolling functionality in `assets/script.js`
 
