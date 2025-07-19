@@ -525,10 +525,10 @@ ourstory .chip{
     transition: var(--transition-hover);
 }
 
-.story-card:hover .card-icon i {
+.story-card:hover .card-icon i, .mission-item:hover i {
     transform: scale(1.1);
-    /* color: var(--light-color); */
-    text-shadow: 0 0 2px var(--dark-color);
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--light-color);
 }
 
 /* Card Content */
@@ -763,6 +763,7 @@ ourstory .chip{
     color: var(--accent-color);
     margin-bottom: 20px;
     display: block;
+    transition: var(--transition-hover);
 }
 
 
