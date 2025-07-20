@@ -18,6 +18,10 @@
     --dark1-color: #0f0f0f;
     --black: #000000;
     --accent-color: #dafc44;
+    --card-bg: #2a2a2a;
+    --border-color: #333333;
+    --neon-lime: #dafc44;
+    --accent-glow: rgba(218, 252, 68, 0.3);
 
     --font-family-anton: 'Anton', sans-serif;
     --font-family-elect:'Electrolize', 'Poppins', sans-serif;
@@ -263,14 +267,29 @@ about, ourstory{
 }
 
 .section-title{
-    font-size: var(--text-medium);
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-family: var(--font-family-anta);
     margin-bottom: 1rem;
     font-weight: 400;
+    color: var(--light-color);
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--neon-lime);
+    border-radius: 2px;
+    box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .about-text p, ourstory p{
     color: var(--light2-color);
+    font-family: var(--font-family-anta);
 }
 
 .about-btn{
@@ -909,20 +928,26 @@ ourstory .chip{
     flex-direction: column;
     gap: 10px;
     width: 80%;
-    /* max-width: 350px; */
-    background-color: var(--accent-color);
+    /* background-color: var(--accent-color); */
     padding: 20px;
-    /* border-radius: 10px; */
     position: relative;
     transform: skew(-5deg);
     margin: 5rem auto;
     text-transform: capitalize;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--card-bg), rgba(26, 26, 26, 0.8));
+    border-radius: 24px;
+    margin-top: 4rem;
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
 }
 
 .form h2 {
     /* font-size: 1.5rem; */
     font-family: var(--font-family-anta);
-    color: var(--dark-color);
+    color: var(--accent-color);
     text-align: center;
     margin-bottom: 0;
 }
@@ -932,7 +957,7 @@ ourstory .chip{
     font-size: 1rem;
     text-align: center;
     margin-bottom: 1rem;
-    font-family: var(--font-family-elect);
+    font-family: var(--font-family-geist);
     width: 80%;
     margin: 0 auto;
 }
@@ -964,13 +989,14 @@ ourstory .chip{
     border: 1px solid rgba(105, 105, 105, 0.397);
     border-radius: 5px;
     background-color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .form label .input + span {
     position: absolute;
     left: 10px;
     top: 15px;
-    color: var(--light2-color);
+    color: var(--light-color);
     font-size: 0.9em;
     cursor: text;
     transition: 0.3s ease;
@@ -988,7 +1014,7 @@ ourstory .chip{
 }
 
 .form label .input:valid + span {
-    color: green;
+    color: var(--light-color);
 }
 
 .input01 {
@@ -998,13 +1024,14 @@ ourstory .chip{
     border: 1px solid rgba(105, 105, 105, 0.397);
     border-radius: 5px;
     background-color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .form label .input01 + span {
     position: absolute;
     left: 10px;
     top: 50px;
-    color: var(--light2-color);
+    color: var(--light-color);
     font-size: 0.9em;
     cursor: text;
     transition: 0.3s ease;
