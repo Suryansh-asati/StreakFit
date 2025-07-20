@@ -527,7 +527,7 @@ ourstory .chip{
 
 .story-card:hover .card-icon i, .mission-item:hover i {
     transform: scale(1.1);
-    color: var(--accent-color);
+    color: var(--dark-color);
     text-shadow: 0 0 10px var(--light-color);
 }
 
