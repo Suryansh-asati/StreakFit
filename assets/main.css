@@ -924,7 +924,17 @@ ourstory .chip{
     font-family: var(--font-family-anta);
     color: var(--dark-color);
     text-align: center;
+    margin-bottom: 0;
+}
+
+.form-description {
+    color: var(--dark-color);
+    font-size: 1rem;
+    text-align: center;
     margin-bottom: 1rem;
+    font-family: var(--font-family-elect);
+    width: 80%;
+    margin: 0 auto;
 }
 
 .message {
@@ -1017,7 +1027,7 @@ ourstory .chip{
 
 .fancy {
     background-color: transparent;
-    border: 2px solid #cacaca;
+    border: 2px solid var(--dark-color);
     border-radius: 0px;
     box-sizing: border-box;
     color: #fff;
@@ -1037,6 +1047,9 @@ ourstory .chip{
     -webkit-user-select: none;
     user-select: none;
     font-size: 13px;
+    font-family: var(--font-family-anta);
+    background: var(--dark-color);
+    color: var(--light-color);
 }
 
 .fancy::before {
