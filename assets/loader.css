@@ -86,7 +86,7 @@ Inspired by shenanigans.shoghisimon.ca/collection/css-rain-bg/
     position: absolute;
     inset: -145%;
     rotate: -45deg;
-    --c: #dafc44;
+    --c: grey;
     --c1: #0066cc;
     background-image: radial-gradient(4px 100px at 0px 235px, var(--c), #0000),
         radial-gradient(4px 100px at 300px 235px, var(--c), #0000),
