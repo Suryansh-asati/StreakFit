@@ -41,6 +41,7 @@ body{
     background-color: var(--backgorund-color);
     color: var(--light-color);
     font-family: var(--font-family-elect);
+    line-height: 1.6;
 }
 
 .small-text{
@@ -70,6 +71,10 @@ a:hover{
 
 a::after:hover{
     width: 100%;
+}
+
+.hero-subtitle{
+    font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 
@@ -170,8 +175,9 @@ nav a img, footer logo img{
 
 hero{
     position: relative;
+    top: 0;
     width: 100%;
-    height: 700px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,7 +250,7 @@ hero-cta{
         radial-gradient(circle at 20% 80%, var(--accent-glow) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, var(--success-glow) 0%, transparent 50%),
         radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
-    z-index: 1;
+    z-index: -1;
     background-size: 150% 150%;
     filter: blur(50px);
     animation: gradientPulse 6s ease-in-out infinite alternate;
@@ -1015,6 +1021,7 @@ ourstory .chip{
 .form label .input:placeholder-shown + span {
     top: 15px;
     font-size: 0.9em;
+    font-family: var(--font-family-geist);
 }
 
 .form label .input:focus + span,.form label .input:valid + span {
