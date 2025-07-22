@@ -432,10 +432,10 @@ body {
     }
 }
 
-@keyframes gradientPulse {
+/* @keyframes gradientPulse {
     0% { opacity: 0.7; }
     100% { opacity: 1; }
-}
+} */
 
 @keyframes pulse {
     0%, 100% { 
