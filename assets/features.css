@@ -54,17 +54,6 @@ body {
 }
 
 /* Hero Section Styles */
-.hero {
-    position: relative;
-    height: 80vh;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    background: linear-gradient(135deg, var(--primary-bg) 0%, #1a1a2e  50%, var(--primary-bg) 100%);
-}
 
 .hero-content {
     position: relative;
