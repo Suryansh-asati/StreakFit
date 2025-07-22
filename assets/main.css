@@ -183,7 +183,7 @@ nav a img, footer logo img{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 2rem auto;
+    margin-top: 2rem;
     overflow: hidden;
     gap: 2rem;
     background: linear-gradient(135deg, var(--primary-bg) 0%, #1a1a2e  50%, var(--primary-bg) 100%);
