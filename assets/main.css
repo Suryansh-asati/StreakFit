@@ -173,7 +173,7 @@ nav a img, footer logo img{
     cursor: pointer;
 }
 
-hero{
+hervo{
     position: relative;
     top: 0;
     width: 100%;
@@ -182,10 +182,24 @@ hero{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('assets/hero-bg.jpg');
+    /* background-image: url('assets/hero-bg.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     gap: 2rem;
+}
+
+.hero{
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    gap: 2rem;
+    background: linear-gradient(135deg, var(--primary-bg) 0%, #1a1a2e  50%, var(--primary-bg) 100%);
 }
 
 hero-text{
@@ -561,9 +575,9 @@ ourstory .chip{
 }
 
 .story-card:hover .card-icon i, .mission-item:hover i {
-    transform: scale(1.1);
-    color: var(--dark-color);
-    text-shadow: 0 0 10px var(--light-color);
+    transform: scale(1.2);
+    /* color: var(--dark-color); */
+    /* text-shadow: 0 0 10px var(--light-color); */
 }
 
 /* Card Content */
@@ -1307,5 +1321,22 @@ ourstory .chip{
         display: grid;
         grid-template-columns: repeat(3, 0fr);
         align-items: center;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .gradient-bg {
+        animation: none;
+    }
+
+    .feature-glow {
+        animation: none;
     }
 }
