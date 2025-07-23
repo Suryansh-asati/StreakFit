@@ -168,6 +168,11 @@ nav a img, footer logo img{
     color: var(--dark-color);
 }
 
+features .getstarted-span{
+    margin: 0.5rem auto;
+    margin-right: 1rem;
+}
+
 .hamburger{
     display: none;
     cursor: pointer;
@@ -183,7 +188,7 @@ nav a img, footer logo img{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
     overflow: hidden;
     gap: 2rem;
     background: linear-gradient(135deg, var(--primary-bg) 0%, #1a1a2e  50%, var(--primary-bg) 100%);
@@ -357,8 +362,10 @@ features{
     background: var(--black);
     padding: 2rem;
     /* padding-left: 0; */
-    /* border-radius: 10px; */
+    border-radius: 10px;
     transition: var(--transition-hover);
+    border: 2px solid var(--dark1-color);
+    background: var(--card-bg);
     gap: 1.2rem;
     font-weight: 100;
 }
