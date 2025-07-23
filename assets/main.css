@@ -203,7 +203,7 @@ hero-text{
     width: 80%;
     text-align: center;
     color: var(--light-color);
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 
 hero-text h1{
