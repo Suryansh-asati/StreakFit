@@ -2,34 +2,42 @@
 
 /* CSS Custom Properties */
 :root {
-    /* Colors */
-    --primary-bg: #0a0a0a;
-    --secondary-bg: #1a1a1a;
-    --card-bg: #2a2a2a;
-    --neon-lime: #dafc44;
-    --bright-green: #18f395;
+    --primary-bg: #010101;
     --primary-text: #ffffff;
-    --secondary-text: #a0a0a0;
-    --muted-text: #666666;
+    --secondary-text: #a1a1a1;
+    --card-bg: #2a2a2a;
     --border-color: #333333;
+    --accent-color: #dafc44;
+    --neon-lime: #dafc44;
     --accent-glow: rgba(218, 252, 68, 0.3);
     --success-glow: rgba(24, 243, 149, 0.3);
+    --no-change-primary-bg: #010101;
+    --no-change-primary-text: #ffffff;
+    --no-change-secondary-text: #a1a1a1;
 
-    /* Typography */
     --font-anton: 'Anton', sans-serif;
-    --font-electrolize: 'Electrolize', monospace;
-    --font-anta: 'Anta', cursive;
-    --font-inter: 'Inter', sans-serif;
+    --font-electrolize: 'Electrolize', 'Poppins', sans-serif;
+    --font-geist: 'Geist', sans-serif;
+    --font-anta: 'Anta', sans-serif;
+    --text-size: 3.5rem;
+    --text-medium: 3rem;
+    --text-small: 2rem;
 
-    /* Spacing */
-    --section-padding: 6rem 0;
-    --container-padding: 0 2rem;
-    --border-radius: 12px;
-    --border-radius-lg: 24px;
+    --transition: all 0.3s ease;
+    --transition-back: all 0.5s ease-in-out;
+    --transition-hover: all 0.3s ease-in-out;
+}
 
-    /* Animations */
-    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+:root.light {
+    --primary-bg: #f4f7f6;
+    --primary-text: #121212;
+    --secondary-text: #666666;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --accent-color: #dafc44;
+    --neon-lime: #dafc44;
+    --accent-glow: rgba(218, 252, 68, 0.3);
+    --success-glow: rgba(24, 243, 149, 0.3);
 }
 
 /* Reset and Base Styles */
@@ -115,7 +123,7 @@ body {
 
 /* Features Section Styles */
 .features-detailed {
-    padding: var(--section-padding);
+    padding: 4rem 2rem;
     background: var(--primary-bg);
     position: relative;
     overflow: hidden;
@@ -189,8 +197,8 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(218, 252, 68, 0.1);
-    color: var(--neon-lime);
+    background: rgba(218, 252, 68, 0.8);
+    color: var(--no-change-primary-bg);
     padding: 0.5rem 1rem;
     border-radius: 25px;
     font-size: 0.9rem;
@@ -254,8 +262,8 @@ body {
 .feature-placeholder {
     width: 300px;
     height: 300px;
-    background: var(--card-bg);
-    border-radius: var(--border-radius-lg);
+    background: var(--no-change-primary-bg);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -374,7 +382,7 @@ body {
 
 .btn-primary {
     background: var(--neon-lime);
-    color: var(--primary-bg);
+    color: var(--no-change-primary-bg);
     box-shadow: 0 4px 20px var(--accent-glow);
 }
 
