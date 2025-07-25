@@ -211,7 +211,7 @@ features .getstarted-span{
     margin-top: 4rem;
     overflow: hidden;
     gap: 2rem;
-    background: linear-gradient(135deg, var(--primary-bg) 0%, #1a1a2e  50%, var(--primary-bg) 100%);
+    /* background: linear-gradient(135deg, var(--primary-bg) 0%, #1a1a2e  50%, var(--primary-bg) 100%); */
 }
 
 hero-text{
