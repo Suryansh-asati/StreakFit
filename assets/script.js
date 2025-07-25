@@ -2,7 +2,15 @@ const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav-2');
 hamburger.addEventListener('click', () => {
     nav.classList.toggle('active');
+    hamburger.classList.toggle('active');
 });
+const menuToggle = document.getElementById('menu-toggle');
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+}
 
 // Preloader functionality
 window.addEventListener('load', () => {
