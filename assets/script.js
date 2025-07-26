@@ -12,6 +12,7 @@ if (menuToggle) {
     });
 }
 
+
 // Preloader functionality
 window.addEventListener('load', () => {
     const loader = document.getElementById('load');
