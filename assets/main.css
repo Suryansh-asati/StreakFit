@@ -201,7 +201,7 @@ features .getstarted-span{
 .hero{
     top: 0;
     position: relative;
-    height: 80vh;
+    /* height: 80vh; */
     min-height: 600px;
     display: flex;
     align-items: center;
@@ -369,7 +369,7 @@ features{
 
 .featurecards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     width: 100%;
 }
