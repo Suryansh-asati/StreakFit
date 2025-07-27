@@ -81,7 +81,7 @@ Inspired by shenanigans.shoghisimon.ca/collection/css-rain-bg/
     }
 }
 
-.loader::before {
+.loader::bef ore {  /*this is actually done to prevent this from being rendered in the DOM*/
     content: "";
     position: absolute;
     inset: -145%;
