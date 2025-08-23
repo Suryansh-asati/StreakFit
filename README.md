@@ -8,7 +8,7 @@ StreakFit is a modern, responsive web application designed to help users track t
 
 **Demo Link:** **https://streakfit.vercel.app/**
 
-## 🌟 Features
+## 🌟 Features 
 
 ### 🎯 Core Functionality
 - **Fitness Tracking**: Monitor your workouts and progress over time
