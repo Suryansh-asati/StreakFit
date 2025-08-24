@@ -1,4 +1,4 @@
-***This project is till in it's early stage of development, many features are still yet to come.***<br>
+***This project is till in it's early stage of development, many features are still yet to come.***<br><br>
  
  ## StreakFit 🏋️‍♂️
 
@@ -185,3 +185,4 @@ This project is open source and available under the [MIT License](LICENSE).
 **Built with ❤️ for the fitness community**
 
 *Start your fitness journey today with StreakFit!*
+
